@@ -1,0 +1,35 @@
+<div class="col-md-6">
+
+    <h2 class="text-center">Venda atual: </h2>
+    <form>
+      <div class="form-group">
+        <label for="codigo">Produto:</label>
+        <input type="codigo" [(ngModel)]="produto.codigo" placeholder="Digite o código do produto" name="codigo" class="form-control" id="codigo">
+      </div>
+
+      <button class="btn btn-success" (click)="createProduto()">Ok</button>
+    </form>
+
+  <h2> Lista de Prdutos</h2>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Código</th>
+      <th>Descrição</th>
+      <th>Preço</th>
+      <th>Ação</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let produto of produtos">
+      <td class="hidden">{{produto.codigo}}</td>
+      <td>{{produto.codigo}}</td>
+      <td>{{produto.descricao}}</td>
+      <td>{{produto.preco}}</td>
+      <td><button class="btn btn-danger" (click)="deleteProduto(produto)"> Excluir produto</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
