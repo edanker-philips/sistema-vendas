@@ -24,12 +24,6 @@ Abrir no borwser:
 http://localhost:4200/
 
 
+No arquivo https://github.com/edanker/sistema-vendas/blob/master/video_funcionamento.exe foi gravado um vídeo demonstrando o funcionamento do sistema.
 
-
-
-
-
-
-
-
-
+Por alguns problemas de ambiente e configuração não foi possível concluir em tempo hábil toda a implementação, somente o requisito 1 e o cenário 1 estão contemplados.
